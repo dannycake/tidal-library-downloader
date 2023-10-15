@@ -1,0 +1,19 @@
+{
+  "name": "tidal-new-releases",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node -r dotenv/config index"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "dotenv": "^16.3.1",
+    "fuse.js": "^6.6.2",
+    "superagent": "^8.1.2"
+  }
+}
