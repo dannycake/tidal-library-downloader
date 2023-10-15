@@ -7,10 +7,7 @@ RUN apt-get update && apt-get install -y \
 RUN pip3 install --upgrade pip
 RUN pip3 install tidal-dl
 
-# add tidal-dl to path
-RUN find / -name "tidal-dl" -type f -executable -print -quit > tidal-dl_path.txt
-RUN cat tidal-dl_path.txt >> /etc/profile
-RUN rm tidal-dl_path.txt
+ENV PATH="/root/.local/bin:${PATH}"
 
 WORKDIR /usr/src/app
 COPY package*.json ./
